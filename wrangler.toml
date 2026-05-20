@@ -1,0 +1,14 @@
+name = "sharpandco"
+compatibility_date = "2024-09-23"
+
+# Cloudflare Pages project
+pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "DB"
+database_name = "sharpandco-db"
+database_id = "fa26ed0e-6c7c-465b-8fee-fbb427301a14"   # Replace after: wrangler d1 create sharpandco-db
+
+# Environment secrets — set via dashboard or CLI:
+#   wrangler pages secret put RESEND_API_KEY
+#   wrangler pages secret put OWNER_EMAIL
