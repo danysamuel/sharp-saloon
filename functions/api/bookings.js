@@ -168,7 +168,7 @@ async function sendOwnerEmail(env, { name, email, phone, service, date, time }) 
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: "bookings@yourdomain.com",   // ← must match your Resend verified domain
+      from: "danysamuel@gmail.com",   // ← must match your Resend verified domain
       to:   env.OWNER_EMAIL,
       subject: `📅 New Booking — ${name} · ${service} · ${displayDate}`,
       html,
